@@ -18,8 +18,7 @@ class CarTest {
     void setStorageFactory() {
         Car i1 = Car.getInstance();
 
-        assertThrows(ClassFormatError.class,
-                ()->{
+        assertDoesNotThrow(()->{
                     i1.setStorageFactory(null);
                 });
     }

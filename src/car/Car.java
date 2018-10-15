@@ -10,13 +10,8 @@ public class Car implements IStorageFactory {
         return instance;
     }
 
-    void setStorageFactory(StorageEnum storageEnum) {
-        try {
-            this.storageFactory = storageEnum.getInstance();
-        } catch (Exception e) {
-            System.out.println("This StorageEnum not exists!");
-            System.exit(1);
-        }
+    void setStorageFactory(IStorageFactory storageEnum) {
+        this.storageFactory = storageEnum;
     }
 
     public String getModelName() {
