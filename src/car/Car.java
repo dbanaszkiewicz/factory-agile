@@ -6,12 +6,17 @@ public class Car implements IStorageFactory {
 
     private Car() {}
 
-    public static Car getInstance() {
+    static Car getInstance() {
         return instance;
     }
 
-    public void setStorageFactory(IStorageFactory storageFactory) {
-        this.storageFactory = storageFactory;
+    void setStorageFactory(StorageEnum storageEnum) {
+        try {
+            this.storageFactory = storageEnum.getInstance();
+        } catch (Exception e) {
+            System.out.println("This StorageEnum not exists!");
+            System.exit(1);
+        }
     }
 
     public String getModelName() {
