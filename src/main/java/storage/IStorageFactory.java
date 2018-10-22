@@ -1,4 +1,4 @@
-package car;
+package storage;
 
 public interface IStorageFactory {
     String getModelName();

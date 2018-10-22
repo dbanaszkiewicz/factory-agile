@@ -1,6 +1,4 @@
-package car.storage;
-
-import car.IStorageFactory;
+package storage;
 
 public class TXTStorageFactory implements IStorageFactory {
     private static TXTStorageFactory instance = new TXTStorageFactory();

@@ -1,6 +1,4 @@
-package car.storage;
-
-import car.IStorageFactory;
+package storage;
 
 public class DBStorageFactory implements IStorageFactory {
     private static DBStorageFactory instance = new DBStorageFactory();

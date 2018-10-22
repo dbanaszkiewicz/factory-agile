@@ -1,5 +1,3 @@
-package car;
-
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -27,7 +25,9 @@ class CarTest {
     void getModelName() {
         Car i1 = Car.getInstance();
 
-        assertThrows(NullPointerException.class, i1::getModelName);
+        assertThrows(NullPointerException.class, ()->{
+            i1.getBrandName();
+        });
     }
 
     @Test

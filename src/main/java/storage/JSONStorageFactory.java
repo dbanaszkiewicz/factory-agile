@@ -1,6 +1,4 @@
-package car.storage;
-
-import car.IStorageFactory;
+package storage;
 
 public class JSONStorageFactory implements IStorageFactory {
     private static JSONStorageFactory instance = new JSONStorageFactory();
@@ -11,12 +9,10 @@ public class JSONStorageFactory implements IStorageFactory {
         return instance;
     }
 
-    @Override
     public String getModelName() {
         return null;
     }
 
-    @Override
     public String getBrandName() {
         return null;
     }

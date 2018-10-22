@@ -1,4 +1,4 @@
-package car;
+import storage.IStorageFactory;
 
 public class Car implements IStorageFactory {
     private static Car instance = new Car();

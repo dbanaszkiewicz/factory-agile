@@ -1,6 +1,5 @@
-package car.storage;
+package storage;
 
-import car.Car;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
